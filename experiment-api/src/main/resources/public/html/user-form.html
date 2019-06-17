@@ -1,0 +1,61 @@
+<form name="userForm">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" data-ng-click="close()"><span
+                aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title" id="modal-title">用户</h3>
+    </div>
+    <div class="modal-body" id="modal-body">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label>用户名</label>
+                    <input data-ng-if="isSave" type="text" class="form-control border-input"
+                           data-ng-model="user.username" required>
+                    <input data-ng-if="!isSave" type="text" class="form-control border-input" value="{{user.username}}"
+                           readonly>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label>邮箱</label>
+                    <input type="email" class="form-control border-input" data-ng-model="user.email">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label>角色</label>
+                    <select class="form-control border-input" data-ng-model="user.role" required>
+                        <option value="staff">员工</option>
+                        <option value="admin">管理员</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label>密码</label>
+                    <input data-ng-if="isSave" type="password" class="form-control border-input"
+                           data-ng-model="user.password" required>
+                    <input data-ng-if="!isSave" type="password" class="form-control border-input"
+                           data-ng-model="user.password">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label>确认密码</label>
+                    <input data-ng-if="isSave" type="password" class="form-control border-input"
+                           data-ng-model="pc.passwordConfirm" required>
+                    <input data-ng-if="!isSave" type="password" class="form-control border-input"
+                           data-ng-model="pc.passwordConfirm">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-default" type="button" data-ng-click="close()">取消</button>
+        <button class="btn btn-primary" type="submit" data-ng-click="save()">确定</button>
+    </div>
+</form>

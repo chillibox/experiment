@@ -1,0 +1,140 @@
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Microsoft YaHei', 'STHeiti', 'Muli', "Helvetica", Arial, sans-serif;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td-name, td {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Microsoft YaHei', 'STHeiti', 'Muli', "Helvetica", Arial, sans-serif;
+}
+
+.row-no-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.coupon-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+}
+
+.coupon {
+    margin: 15px auto;
+    max-width: 420px;
+    color: #333;
+}
+
+.coupon .coupon-head,
+.coupon .coupon-body,
+.coupon .coupon-tail {
+    background-color: #fff;
+    word-wrap: break-word;
+}
+
+.coupon-head {
+    border-radius: 4px 4px 8px 8px;
+}
+
+.coupon .coupon-gray {
+    color: #999;
+}
+
+.coupon-seam {
+    height: 0;
+    border-bottom: thin dashed #fff;
+    margin: 0 8px;
+}
+
+.coupon-row {
+    margin: 10px auto;
+}
+
+.coupon-body {
+    border-radius: 8px 8px 4px 4px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.5);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.coupon-qrcode img {
+    margin: auto;
+    width: 100%;
+    max-width: 256px;
+}
+
+.coupon-factors {
+    margin: 0 20px 20px 20px;
+    text-align: left;
+}
+
+ul.coupon-factors {
+    padding: 0;
+    list-style-type: none;
+}
+
+.coupon-factors li {
+    display: inline-block;
+    margin-right: 15px;
+    max-width: 100%;
+}
+
+.coupon-factors li:before {
+    content: '\002022';
+    margin-right: 0.25em;
+}
+
+.coupon-tail {
+    margin-top: 15px;
+    padding: 10px 5px;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.5);
+}
+
+.coupon-used .coupon-head,
+.coupon-used .coupon-body,
+.coupon-used .coupon-tail {
+    background-color: #e3e3e3;
+}
+
+.coupon a {
+    outline: none;
+}
+
+.coupon h1, .coupon .h1 {
+    font-size: 36px;
+}
+
+.coupon h3, .coupon .h3 {
+    font-size: 24px;
+}
+
+.coupon h5, .coupon .h5 {
+    font-size: 14px;
+}
+
+.coupon h1, .coupon .h1,
+.coupon h2, .coupon .h2,
+.coupon h3, .coupon .h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.coupon h1, .coupon h2, .coupon h3,
+.coupon h4, .coupon h5, .coupon h6,
+.coupon .h1, .coupon .h2, .coupon .h3,
+.coupon .h4, .coupon .h5, .coupon .h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #333;
+}
+
+.modal-header {
+    word-wrap: break-word;
+}
